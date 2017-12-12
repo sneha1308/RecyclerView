@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ThemeSwitcher</string>
+
+    <string name="settings_text_select_theme">Select Theme:</string>
+    <string name="settings_text_credentials">Credentials</string>
+    <string name="settings_text_username_hint">username</string>
+    <string name="settings_text_password_hint">password</string>
+
+
+    <string-array name="theme_array">
+
+        <!-- Spinner Entries -->
+
+        <item>Material-Light</item>
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>grey</item>
+        <item>yellow</item>
+        <item>orange</item>
+
+    </string-array>
+
+</resources>

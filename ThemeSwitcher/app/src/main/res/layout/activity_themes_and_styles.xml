@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sneha.themeswitcher.ThemesAndStylesActivity">
+
+    <TextView
+        android:id="@+id/select_theme_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/settings_text_select_theme"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/select_theme_tv"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/select_theme_tv"
+        android:entries="@array/theme_array"
+        android:spinnerMode="dropdown" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_theme_tv"
+        android:layout_margin="16dp"
+        android:elevation="10dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/credentials_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:paddingStart="2dp"
+            android:text="@string/settings_text_credentials"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/credentials_tv"
+            android:hint="@string/settings_text_username_hint"
+            android:imeOptions="actionNext"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username_et"
+            android:hint="@string/settings_text_password_hint"
+            android:imeOptions="actionDone"
+            android:singleLine="true" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
