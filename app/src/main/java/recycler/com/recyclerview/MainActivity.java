@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         //---or ---
 
         //Way-2 and best
-        buildList(Arrays.asList("Fichis", "H2", "H3", "S1", "S2", "S3", "N1", "N2", "N3"));
+        buildList(Arrays.asList("H1", "H2", "H3", "S1", "S2", "S3", "N1", "N2", "N3"));
 
 
     }
